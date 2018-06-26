@@ -1,10 +1,9 @@
-import React from 'react'
 
-const Song = () => {
-  return(
-  <p>Song Test</p>
-)
+const Song = (props) => {
+
+  return("hi")
+  // <p>{props.feed.entry.title}</p>
+
 }
-
 
 export default Song;
