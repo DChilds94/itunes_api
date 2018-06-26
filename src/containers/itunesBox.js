@@ -1,4 +1,5 @@
 import React from 'react';
+import TopTwenty from "../components/TopTwenty.js"
 
 class ItunesBox extends React.Component {
 
@@ -6,7 +7,7 @@ class ItunesBox extends React.Component {
   render(){
     return (
       <div>
-        <p>test</p>
+        <TopTwenty />
       </div>
     )
   }
