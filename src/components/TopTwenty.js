@@ -1,11 +1,12 @@
 import React from "react";
+import Song from "./Song.js"
 
 class TopTwenty extends React.Component {
 
   render() {
     return(
       <div>
-        <p>top twenty test</p>
+        <Song />
       </div>
     )
   }
