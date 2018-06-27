@@ -4,11 +4,11 @@ import Song from "./Song.js"
 class TopTwenty extends React.Component {
 render() {
 
-  const topTwentyList = this.props.topTwenty.map((song, index => (
+  const topTwentyList = this.props.topTwenty.map((song, index) => (
     <li key={["feed.entry.id.im:id"]} value={index}>
-      {song.entry}
+      {song["im:name"].label}
     </li>
-  )))
+  ))
 // ))
 // )
     return(

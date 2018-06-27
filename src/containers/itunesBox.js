@@ -17,6 +17,7 @@ class ItunesBox extends React.Component {
   request.addEventListener("load", () => {
     if (request.status !== 200) return;
     const topTwenty = JSON.parse(request.response)
+
     this.setState({topTwenty: topTwenty.feed.entry})
   })
   request.send();
@@ -25,6 +26,7 @@ class ItunesBox extends React.Component {
   render(){
     return (
       <div>
+        
         <TopTwenty topTwenty={this.state.topTwenty}/>
       </div>
     )
